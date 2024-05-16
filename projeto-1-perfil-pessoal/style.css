@@ -1,0 +1,33 @@
+.container {
+    display: grid;
+    border: 1px solid black;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    height: 100vh;
+    grid-template-areas: 
+    'header header header header'
+    'main main main aside'
+    'main main main aside'
+    'main main main aside'
+    'main main main aside'
+    'footer footer footer footer'
+    ;
+    
+}
+
+header {
+    grid-area: header;
+    border: 1px solid black;
+}
+main {
+    grid-area: main;
+    border: 1px solid black;
+}
+aside {
+    grid-area: aside;
+    border: 1px solid black;
+}
+footer {
+    border: 1px solid black;
+    grid-area: footer;
+}
